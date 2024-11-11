@@ -1,0 +1,69 @@
+.coffee-image {
+    aspect-ratio: 683/1200 !important;
+    object-fit: contain;
+}
+
+.p-top-for-header {
+    padding-top: var(--p-top-for-header);
+}
+
+.theme-switcher-wrapper {
+    background-color: var(--accent-color);
+}
+
+.active-link {
+    color: var(--accent-color) !important;
+}
+
+@media (min-width: 65.001em) {
+    body {
+        --header-height: 5rem;
+        --p-top-for-header: 2.5rem;
+    }
+
+    .navigation-page-item {
+        color: var(--secondary-text-color);
+        padding: 0.25rem;
+
+        font-size: 0.85rem;
+        letter-spacing: -0.04rem;
+    }
+
+    .coffee-image {
+        max-height: min(47.5rem, 75%);
+    }
+
+    .big-screen-p-top-for-header {
+        padding-top: var(--p-top-for-header);
+    }
+
+    .theme-switcher-wrapper {
+        width: 2rem;
+        height: 1rem;
+    }
+
+    .lang-icon {
+        width: 1.65rem;
+        height: 1.65rem;
+    }
+}
+
+@media (max-width: 65em) {
+    body {
+        --header-height: 5rem;
+        --p-top-for-header: var(--header-height);
+    }
+
+    .coffee-image {
+        max-height: 100%;
+    }
+
+    .small-screen-max-h-40rem {
+        max-height: 40rem;
+    }
+
+    .theme-switcher-wrapper {
+        width: 3rem;
+        height: 1.25rem;
+    }
+}
